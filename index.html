@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cocktail API</title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <a id="top"></a>
+    <main class="container" aria-live="polite">
+        <h1>Olive<img src="/images/olivelogov2.png" alt="olive logo">Twist</h1>
+        <h3>To find the perfect cocktail, search by ingredient (vodka, rum, lemon...) or by the exact drink name (e.g. Tom Collins)</h3>
+
+        <form id="js-form">
+            <input type="text" name="search-term" id="js-search-term" placeholder="Start your search here" required>
+            <input type="submit" id ="button" value="search">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        
+        <section id="results" class="hidden">
+            <ul id="results-list">
+            </ul>
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
+</body>
+</html>

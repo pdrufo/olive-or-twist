@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+  }
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+    color:rgb(52, 201, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+h1 img {
+    height:75px;
+    vertical-align: middle;
+    padding: 2px;
+  }
+
+h2 {
+    color:rgb(52, 201, 255);
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+h3 {
+    font-weight: bolder;
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.4;
+    background: url(/images/moscow0754.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: black;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+input[type="text"] {
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width:90%;
+    padding: 5px 0 7px;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 100px;
+    transition: 0.4s;
+  }
+  
+input[type="submit"] {
+    margin-left: 90px;
+    padding: 6px 10px 7px !important;
+    font-size: 12px !important;
+    background-color: #F36C8C;
+    font-weight: bold;
+    outline: none;
+    color: #ffffff;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid #F36C8C;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+li {
+    padding: 10px;
+  }
+  
+li, img {
+    max-width: 50%;
+  }
+  
+.hidden {
+    display: none;
+  }
+
+.js-ul {
+    list-style: initial;
+  }
+
+.js-ul li { 
+    margin-left: 30px;
+    line-height: 1;
+    padding: 5px 0px;
+  }
+
+section {
+  margin-left: 25px;  
+}
+
+#results-list {
+  margin-top: 200px;
+}
+
+ #js-error-message {
+   font-size: 16px;
+   color: white;
+   background-color:red;
+   border-radius: 5px;
+   font-weight: bold;
+   text-align: center;
+   color: #ffffff;
+   border-radius: 100px;
+   -moz-border-radius: 100px;
+   -webkit-border-radius: 100px;
+   border: 1px solid #F36C8C;
+   cursor: pointer;
+   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+ } 
+
+ a {
+   color: white;
+   font-size: 16px;
+   text-decoration: none;
+ }
+
+ @media screen and (min-width: 321px) {
+  #results-list {
+    margin-top: 450px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h1 img {
+    height:100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width:80%;
+  }
+
+  #results-list {
+    margin-top: 600px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h1 img {
+    height:150px;
+  }
+
+  input[type="text"] {
+    font-size:16px;
+  }
+
+  input[type="submit"] {
+    margin-left: 160px;
+    padding: 8px 14px 9px !important;
+    font-size: 14px !important;
+  }
+
+  h2 {
+    font-size:30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  li, p, a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width:80%;
+  }
+
+  #results-list {
+    margin-top: 900px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  h1 img {
+    height:170px;
+  }
+
+  input[type="text"] {
+    font-size:20px;
+  }
+
+  input[type="submit"] {
+    margin-left: 190px;
+    padding: 14px 20px 13px !important;
+    font-size: 18px !important;
+  }
+
+  h2 {
+    font-size:40px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  li, p, a{
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width:60%;
+  }
+ 
+  #results-list {
+    margin-top: 1400px;
+  }
+
+  h1 {
+    font-size: 125px;
+  }
+
+  h1 img {
+    height:175px;
+  }
+
+  li, img {
+    max-width: 60%;
+  }
+
+  input[type="text"] {
+   font-size:20px;
+  }
+
+  input[type="submit"] {
+    margin-left: 190px;
+    padding: 14px 20px 13px !important;
+    font-size: 18px !important;
+  }
+
+  h2 {
+    font-size:50px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  li, p, a{
+    font-size: 35px;
+  }
+}
