@@ -31,7 +31,7 @@ body {
     font-size: 14px;
     font-weight: bolder;
     line-height: 1.4;
-    background: url('/img/moscow.jpg');
+    background: url('https://github.com/pdrufo/olive-or-twist/blob/master/img/moscow.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
