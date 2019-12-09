@@ -123,13 +123,14 @@ section {
    text-align: center;
    color: #ffffff;
    border-radius: 100px;
-   -moz-border-radius: 100px;
+   cursor: pointer;
+   /* -moz-border-radius: 100px;
    -webkit-border-radius: 100px;
    border: 1px solid #F36C8C;
-   cursor: pointer;
-   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+   
+   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; */
  } 
 
  a {
@@ -149,6 +150,10 @@ section {
 
   h1 img {
     height:100px;
+  }
+
+  #js-error-message {
+    padding: 6px 10px 7px !important;
   }
 }
 
@@ -189,6 +194,10 @@ section {
 
   li, p, a{
     font-size: 20px;
+  }
+
+  #js-error-message {
+    padding: 8px 12px 8px !important;
   }
 }
 

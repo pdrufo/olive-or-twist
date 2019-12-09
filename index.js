@@ -44,6 +44,7 @@ function displayResults(responseJson) {
   );
   $('#results').removeClass('hidden');
   $('.details').hide();
+  
   $('#button').click(function() {
     $('html, body').animate({
       scrollTop: $('#results').offset().top
