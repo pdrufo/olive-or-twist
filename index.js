@@ -55,8 +55,9 @@ function displayResults(responseJson) {
 function displayCocktail(){
   $('#results-list').on('click', '.drink-image', function () {
     // console.log($(this).parent().siblings()[1]);
-    event.preventDefault();
+   
     $(this).parent().siblings().toggle(800); 
+    event.preventDefault();
   });
   // $('#results-list').on('submit', '.drink-image', function () {
   //   event.preventDefault();
@@ -89,10 +90,13 @@ function searchByName(query) {
 
 function watchForm() {
   $('form').submit(event => {
-    event.preventDefault();
+    
+    
     $('.results').empty();
     const searchTerm = $('#js-search-term').val();
+    alert('xyx');
     searchByName(searchTerm);
+    event.preventDefault();
   });
 }
   
