@@ -122,8 +122,9 @@ section {
    font-weight: bold;
    text-align: center;
    color: #ffffff;
-   border-radius: 100px;
+   border-radius: 50px;
    cursor: pointer;
+   
    /* -moz-border-radius: 100px;
    -webkit-border-radius: 100px;
    border: 1px solid #F36C8C;
@@ -151,10 +152,6 @@ section {
   h1 img {
     height:100px;
   }
-
-  #js-error-message {
-    padding: 6px 10px 7px !important;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -180,8 +177,8 @@ section {
 
   input[type="submit"] {
     margin-left: 160px;
-    padding: 8px 14px 9px !important;
-    font-size: 14px !important;
+    padding: 8px 14px 9px;
+    font-size: 14px;
   }
 
   h2 {
@@ -196,9 +193,10 @@ section {
     font-size: 20px;
   }
 
-  #js-error-message {
-    padding: 8px 12px 8px !important;
-  }
+  /* #js-error-message {
+    margin-top: 50px;
+    padding: 5px 10px 5px;
+  } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -267,8 +265,8 @@ section {
 
   input[type="submit"] {
     margin-left: 190px;
-    padding: 14px 20px 13px !important;
-    font-size: 18px !important;
+    padding: 14px 20px 13px;
+    font-size: 18px;
   }
 
   h2 {
