@@ -62,8 +62,8 @@ input[type="text"] {
   
 input[type="submit"] {
     margin-left: 90px;
-    padding: 6px 10px 7px !important;
-    font-size: 12px !important;
+    padding: 6px 10px 7px;
+    font-size: 12px;
     background-color: #F36C8C;
     font-weight: bold;
     outline: none;
@@ -114,33 +114,23 @@ section {
   margin-top: 200px;
 }
 
- #js-error-message {
-   font-size: 16px;
-   color: white;
-   background-color:red;
-   border-radius: 5px;
-   font-weight: bold;
-   text-align: center;
-   color: #ffffff;
-   border-radius: 50px;
-   cursor: pointer;
-   
-   /* -moz-border-radius: 100px;
-   -webkit-border-radius: 100px;
-   border: 1px solid #F36C8C;
-   
-   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; 
-   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset; */
- } 
+#js-error-message {
+  font-size: 16px;
+  color: white;
+  background-color:red;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+} 
 
- a {
-   color: white;
-   font-size: 16px;
-   text-decoration: none;
- }
+a {
+  color:rgb(255, 136, 17);
+  font-size: 16px;
+  text-decoration: none;
+}
 
- @media screen and (min-width: 321px) {
+@media screen and (min-width: 321px) {
   #results-list {
     margin-top: 450px;
   }
@@ -178,7 +168,7 @@ section {
   input[type="submit"] {
     margin-left: 160px;
     padding: 8px 14px 9px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h2 {
@@ -193,10 +183,6 @@ section {
     font-size: 20px;
   }
 
-  /* #js-error-message {
-    margin-top: 50px;
-    padding: 5px 10px 5px;
-  } */
 }
 
 @media screen and (min-width: 1024px) {

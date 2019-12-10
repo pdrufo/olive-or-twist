@@ -54,16 +54,9 @@ function displayResults(responseJson) {
 
 function displayCocktail(){
   $('#results-list').on('click', '.drink-image', function () {
-    // console.log($(this).parent().siblings()[1]);
-   
-    $(this).parent().siblings().toggle(800); 
+    $(this).parent().siblings().show(800); 
     event.preventDefault();
   });
-  // $('#results-list').on('submit', '.drink-image', function () {
-  //   event.preventDefault();
-  //   console.log($(this).parent().siblings()[1]);
-  //   $(this).parent().siblings().toggle(600); 
-  // });
 }
 
 function searchByName(query) {
@@ -90,11 +83,8 @@ function searchByName(query) {
 
 function watchForm() {
   $('form').submit(event => {
-    
-    
     $('.results').empty();
     const searchTerm = $('#js-search-term').val();
-    alert('xyx');
     searchByName(searchTerm);
     event.preventDefault();
   });
