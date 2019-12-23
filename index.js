@@ -16,9 +16,8 @@ function displayResults(responseJson) {
     $('#results-list').append(
       `<div class="thumbs">
         <h2>${responseJson.drinks[i].strDrink}</h2>
-        <a href="javascript:displayCocktail()"><img src="${responseJson.drinks[i].strDrinkThumb}" class="drink-image"></a>
+        <a href="javascript:displayCocktail()"><img src="${responseJson.drinks[i].strDrinkThumb}" class="drink-image" alt="image of cocktail"></a>
         <div class="details" id="${responseJson.drinks[i].idDrink}">
-          <h2>${responseJson.drinks[i].strDrink}</h2>
           <ul class="js-ul"><h3>Ingredients:</h3>
             ${Object.keys(responseJson.drinks[i])
             .filter(key => key.includes('strIngredient'))
@@ -45,16 +44,24 @@ function displayResults(responseJson) {
   $('#results').removeClass('hidden');
   $('.details').hide();
   
-  $('#button').click(function() {
+  // $('#button').click(function(event) {
+  //   event.preventDefault();
+  //   $('html, body').animate({
+  //     scrollTop: $('#results').offset().top
+  //   }, 1000);
+  // });
+  var offset = 0;
+
+    offset = $('#results').offset().top;
+
     $('html, body').animate({
-      scrollTop: $('#results').offset().top
+        scrollTop: offset
     }, 1000);
-  });
 }
 
 function displayCocktail(){
   $('#results-list').on('click', '.drink-image', function () {
-    $(this).parent().siblings().show(800); 
+    $(this).parent().siblings().toggle(800); 
     event.preventDefault();
   });
 }

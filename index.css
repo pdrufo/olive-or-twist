@@ -112,6 +112,7 @@ section {
 
 #results-list {
   margin-top: 200px;
+  display: inline-block;
 }
 
 #js-error-message {
